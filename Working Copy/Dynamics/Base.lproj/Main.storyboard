@@ -33,6 +33,9 @@
                                                         <state key="normal" title="Gravity">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <segue destination="n0p-Dh-OoC" kind="show" id="7Mf-t4-zEb"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.16513559650000001" green="0.39584164550000001" blue="0.8282828283" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,6 +55,9 @@
                                                         <state key="normal" title="Snap!">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <segue destination="bYw-nO-HVk" kind="show" id="cpB-Iz-Dcd"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.63185852259999997" green="0.1112081481" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,17 +73,11 @@
                                             <constraint firstItem="jO3-TV-Ktq" firstAttribute="leading" secondItem="KmM-gM-24L" secondAttribute="leading" id="GUt-iU-u6P"/>
                                             <constraint firstItem="Hdk-g7-XFm" firstAttribute="top" secondItem="jO3-TV-Ktq" secondAttribute="bottom" id="MXw-a2-5PT"/>
                                             <constraint firstItem="jO3-TV-Ktq" firstAttribute="top" secondItem="KmM-gM-24L" secondAttribute="top" id="PAe-lp-1Df"/>
-                                            <constraint firstItem="jO3-TV-Ktq" firstAttribute="centerX" secondItem="KmM-gM-24L" secondAttribute="centerX" id="QsL-ps-Fj7"/>
                                             <constraint firstItem="Hdk-g7-XFm" firstAttribute="centerX" secondItem="jO3-TV-Ktq" secondAttribute="centerX" id="W6O-eq-AFV"/>
                                             <constraint firstItem="Hdk-g7-XFm" firstAttribute="width" secondItem="jO3-TV-Ktq" secondAttribute="width" id="b4b-0Y-aXU"/>
                                             <constraint firstAttribute="trailing" secondItem="jO3-TV-Ktq" secondAttribute="trailing" id="kkX-Di-vs2"/>
                                             <constraint firstAttribute="bottom" secondItem="Hdk-g7-XFm" secondAttribute="bottom" id="mgv-hi-Gqu"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="QsL-ps-Fj7"/>
-                                            </mask>
-                                        </variation>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -155,7 +155,7 @@
         <!--Gravity-->
         <scene sceneID="ZWM-ER-4Gu">
             <objects>
-                <viewController title="Gravity" id="n0p-Dh-OoC" sceneMemberID="viewController">
+                <viewController title="Gravity" id="n0p-Dh-OoC" customClass="GravityViewController" customModule="Dynamics" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bgB-fQ-94w"/>
                         <viewControllerLayoutGuide type="bottom" id="e1L-Ii-hKc"/>
@@ -173,6 +173,9 @@
                                         <state key="normal" title="Lower the Floor!">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didTapDropFloorButton:" destination="n0p-Dh-OoC" eventType="touchUpInside" id="8It-YY-HY2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.16513559654251594" green="0.3958416454579548" blue="0.82828282828282818" alpha="1" colorSpace="calibratedRGB"/>
@@ -199,10 +202,22 @@
                             <constraint firstItem="QMA-Wh-WzU" firstAttribute="leading" secondItem="LWC-3v-dD1" secondAttribute="leadingMargin" constant="-16" id="MEA-kq-SX4"/>
                             <constraint firstItem="e1L-Ii-hKc" firstAttribute="top" secondItem="QMA-Wh-WzU" secondAttribute="bottom" id="j6O-t3-rKN"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Wxi-i2-YfU" appends="YES" id="QPA-j3-Eh5"/>
+                        </connections>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="dropFloorButtonSurroundView" destination="QMA-Wh-WzU" id="GTV-Nd-mS9"/>
+                        <outlet property="instructionalTextLabel" destination="VPV-c6-gFZ" id="gac-Mh-deS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gC-uD-8rL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Wxi-i2-YfU">
+                    <connections>
+                        <action selector="didTapOnScreen:" destination="n0p-Dh-OoC" id="NXj-0b-fEL"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1868" y="683"/>
         </scene>
