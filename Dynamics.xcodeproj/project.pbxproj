@@ -281,6 +281,7 @@
 				73F0EF041B9B453500C2E47F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

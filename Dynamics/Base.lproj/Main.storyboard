@@ -110,7 +110,7 @@
         <!--Snap!-->
         <scene sceneID="VwT-jP-uYw">
             <objects>
-                <viewController title="Snap!" id="bYw-nO-HVk" sceneMemberID="viewController">
+                <viewController title="Snap!" id="bYw-nO-HVk" customClass="SnapViewController" customModule="Dynamics" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8yH-tN-0XX"/>
                         <viewControllerLayoutGuide type="bottom" id="QQt-kh-rYI"/>
@@ -131,6 +131,7 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.63185852258414643" green="0.11120814808842905" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="yVy-g8-W1P" secondAttribute="trailing" constant="32" id="1TE-FA-Cid"/>
                                     <constraint firstItem="yVy-g8-W1P" firstAttribute="top" secondItem="CkX-fK-sIC" secondAttribute="top" constant="8" id="Q7F-hJ-dFk"/>
@@ -169,7 +170,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDe-c0-hEX">
                                         <rect key="frame" x="20" y="8" width="280" height="35"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                        <state key="normal" title="Drop Those Balls!">
+                                        <state key="normal" title="Lower the Floor!">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -198,14 +199,10 @@
                             <constraint firstItem="QMA-Wh-WzU" firstAttribute="leading" secondItem="LWC-3v-dD1" secondAttribute="leadingMargin" constant="-16" id="MEA-kq-SX4"/>
                             <constraint firstItem="e1L-Ii-hKc" firstAttribute="top" secondItem="QMA-Wh-WzU" secondAttribute="bottom" id="j6O-t3-rKN"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="w2O-LF-ZvG" appends="YES" id="95G-Gz-TLV"/>
-                        </connections>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gC-uD-8rL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="w2O-LF-ZvG"/>
             </objects>
             <point key="canvasLocation" x="1868" y="683"/>
         </scene>
