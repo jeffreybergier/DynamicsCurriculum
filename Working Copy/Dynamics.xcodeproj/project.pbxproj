@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		73029EA81B9BC71B00F79DD5 /* GravityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73029EA71B9BC71B00F79DD5 /* GravityViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		73029EAA1B9BC72100F79DD5 /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73029EA91B9BC72100F79DD5 /* SnapViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		73029EAC1B9C07B300F79DD5 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73029EAB1B9C07B300F79DD5 /* CircleView.swift */; settings = {ASSET_TAGS = (); }; };
+		73029EAE1B9C092F00F79DD5 /* UIColor+RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73029EAD1B9C092F00F79DD5 /* UIColor+RandomColor.swift */; settings = {ASSET_TAGS = (); }; };
 		73F0EEF41B9B453500C2E47F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F0EEF31B9B453500C2E47F /* AppDelegate.swift */; };
 		73F0EEF91B9B453500C2E47F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F0EEF71B9B453500C2E47F /* Main.storyboard */; };
 		73F0EEFB1B9B453500C2E47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73F0EEFA1B9B453500C2E47F /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* Begin PBXFileReference section */
 		73029EA71B9BC71B00F79DD5 /* GravityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityViewController.swift; sourceTree = "<group>"; };
 		73029EA91B9BC72100F79DD5 /* SnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
+		73029EAB1B9C07B300F79DD5 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		73029EAD1B9C092F00F79DD5 /* UIColor+RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RandomColor.swift"; sourceTree = "<group>"; };
 		73F0EEF01B9B453500C2E47F /* Dynamics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dynamics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73F0EEF31B9B453500C2E47F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73F0EEF81B9B453500C2E47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				73F0EEF31B9B453500C2E47F /* AppDelegate.swift */,
 				73029EA71B9BC71B00F79DD5 /* GravityViewController.swift */,
 				73029EA91B9BC72100F79DD5 /* SnapViewController.swift */,
+				73029EAB1B9C07B300F79DD5 /* CircleView.swift */,
+				73029EAD1B9C092F00F79DD5 /* UIColor+RandomColor.swift */,
 				73F0EEF71B9B453500C2E47F /* Main.storyboard */,
 				73F0EEFA1B9B453500C2E47F /* Assets.xcassets */,
 				73F0EEFC1B9B453500C2E47F /* LaunchScreen.storyboard */,
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73029EAC1B9C07B300F79DD5 /* CircleView.swift in Sources */,
 				73029EAA1B9BC72100F79DD5 /* SnapViewController.swift in Sources */,
 				73F0EEF41B9B453500C2E47F /* AppDelegate.swift in Sources */,
+				73029EAE1B9C092F00F79DD5 /* UIColor+RandomColor.swift in Sources */,
 				73029EA81B9BC71B00F79DD5 /* GravityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

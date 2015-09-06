@@ -95,8 +95,8 @@ class GravityViewController: UIViewController {
         // this happens every other time
         if let sender = sender {
             let touchPoint = sender.locationInView(.None)
-            let newView = UIView(frame: CGRect(x: touchPoint.x, y: touchPoint.y, width: 30, height: 30))
-            newView.backgroundColor = .purpleColor()
+            let randomColor = UIColor.randomColor()
+            let newView = CircleView(radius: 15.0, origin: touchPoint, color: randomColor)
             self.view.addSubview(newView)
             self.gravityBehavior.addItem(newView)
             self.collisionBehavior.addItem(newView)
